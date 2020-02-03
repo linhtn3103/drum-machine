@@ -14,6 +14,12 @@ class DrumPad extends React.Component {
     document.removeEventListener('keydown', this.handleKeyPress);
   }
   render() {
-    return {};
+    return (
+      <div>
+        <p></p>
+        <audio></audio>
+      </div>
+    );
   }
 }
+export default DrumPad;
