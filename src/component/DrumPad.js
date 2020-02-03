@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class DrumPad extends React.Component {
   constructor(props) {
@@ -8,10 +8,12 @@ class DrumPad extends React.Component {
     this.handleKeyPress = this.handleKeyPress.bind(this);
   }
   componentDidMount() {
-    document.addEventListener("keydown", this.handleKeyPress);
+    document.addEventListener('keydown', this.handleKeyPress);
   }
   componentWillUnmount() {
-    document.removeEventListener("keydown", this.handleKeyPress);
+    document.removeEventListener('keydown', this.handleKeyPress);
   }
-  playSound(e) { }
+  render() {
+    return {};
+  }
 }
