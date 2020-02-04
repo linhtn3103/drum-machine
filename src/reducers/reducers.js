@@ -13,7 +13,6 @@ export const reducer = (
       return Object.assign({}, state, { display: actions.display });
     case BANK:
       return Object.assign({}, state, { bank: actions.bank });
-      break;
     default:
       return state;
   }

@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import DrumPad from '../src/component/DrumPad.js';
 import { store } from '../src/store/store';
+
 import {
   changeVolume,
   changePower,
@@ -37,14 +36,10 @@ const mapDispatchToProps = dispatch => {
   };
 };
 const Container = connect(mapStateToProps, mapDispatchToProps)(App);
-DrumPad = connect(mapStateToProps, mapDispatchToProps)(DrumPad);
+
 ReactDOM.render(
   <Provider store={store}>
     <Container />
   </Provider>,
-  document.getElementById('root')
+  document.getElementById('drum-machine')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
