@@ -61,18 +61,19 @@ class App extends Component {
     return (
       <div id='app' style={themeStyle}>
         <div
-          id='controls-containner'
-          style={
-            (themeStyle,
-            {
-              borderRadius: '30px',
-              width: '300px',
-              height: '300px',
-              padding: '10px',
-              display: 'grid',
-              gridGap: '10px'
-            })
-          }>
+          id='controls-container'
+          // style= {
+          //   themeStyle
+          //   // {
+          //   //   borderRadius: '30px',
+          //   //   width: '300px',
+          //   //   height: '300px',
+          //   //   padding: '10px',
+          //   //   display: 'grid',
+          //   //   gridGap: '10px'
+          //   // })
+          // }>
+        >
           <div id='header'>
             <FontAwesome
               id='logo'
